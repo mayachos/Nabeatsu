@@ -67,7 +67,7 @@ class ViewController: UIViewController {
         return 0
     }
     @IBAction func plusButton(){
-        number = number + 1
+        number = Int.random(in: 1...100)
         countLabel.text = String(number)
         
         if isAho() == 1 {
